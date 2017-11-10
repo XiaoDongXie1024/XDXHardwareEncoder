@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64277FD31FB538580052053A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64277FD21FB538580052053A /* CoreMedia.framework */; };
+		643835E51FB4431100AE1628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 643835E41FB4431100AE1628 /* AppDelegate.m */; };
+		643835E81FB4431100AE1628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643835E71FB4431100AE1628 /* ViewController.m */; };
+		643835EB1FB4431100AE1628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643835E91FB4431100AE1628 /* Main.storyboard */; };
+		643835ED1FB4431100AE1628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643835EC1FB4431100AE1628 /* Assets.xcassets */; };
+		643835F01FB4431100AE1628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643835EE1FB4431100AE1628 /* LaunchScreen.storyboard */; };
+		643835F31FB4431100AE1628 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 643835F21FB4431100AE1628 /* main.m */; };
+		643835FD1FB4431100AE1628 /* XDXHardwareEncoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 643835FC1FB4431100AE1628 /* XDXHardwareEncoderTests.m */; };
+		643836081FB4431100AE1628 /* XDXHardwareEncoderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 643836071FB4431100AE1628 /* XDXHardwareEncoderUITests.m */; };
+		643836171FB4434C00AE1628 /* XDXHardwareEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 643836161FB4434C00AE1628 /* XDXHardwareEncoder.m */; };
+		6438361E1FB44A1700AE1628 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6438361D1FB44A1700AE1628 /* VideoToolbox.framework */; };
+		643836281FB4711900AE1628 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 643836271FB4711900AE1628 /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		643835F91FB4431100AE1628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 643835D81FB4431100AE1628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 643835DF1FB4431100AE1628;
+			remoteInfo = XDXHardwareEncoder;
+		};
+		643836041FB4431100AE1628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 643835D81FB4431100AE1628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 643835DF1FB4431100AE1628;
+			remoteInfo = XDXHardwareEncoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64277FD21FB538580052053A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		643835E01FB4431100AE1628 /* XDXHardwareEncoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDXHardwareEncoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		643835E31FB4431100AE1628 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		643835E41FB4431100AE1628 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		643835E61FB4431100AE1628 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		643835E71FB4431100AE1628 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		643835EA1FB4431100AE1628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		643835EC1FB4431100AE1628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		643835EF1FB4431100AE1628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		643835F11FB4431100AE1628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643835F21FB4431100AE1628 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		643835F81FB4431100AE1628 /* XDXHardwareEncoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDXHardwareEncoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		643835FC1FB4431100AE1628 /* XDXHardwareEncoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXHardwareEncoderTests.m; sourceTree = "<group>"; };
+		643835FE1FB4431100AE1628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643836031FB4431100AE1628 /* XDXHardwareEncoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XDXHardwareEncoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		643836071FB4431100AE1628 /* XDXHardwareEncoderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXHardwareEncoderUITests.m; sourceTree = "<group>"; };
+		643836091FB4431100AE1628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643836151FB4434C00AE1628 /* XDXHardwareEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDXHardwareEncoder.h; sourceTree = "<group>"; };
+		643836161FB4434C00AE1628 /* XDXHardwareEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XDXHardwareEncoder.m; sourceTree = "<group>"; };
+		6438361B1FB449FE00AE1628 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		6438361D1FB44A1700AE1628 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		643836271FB4711900AE1628 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		643835DD1FB4431100AE1628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64277FD31FB538580052053A /* CoreMedia.framework in Frameworks */,
+				643836281FB4711900AE1628 /* libc++.tbd in Frameworks */,
+				6438361E1FB44A1700AE1628 /* VideoToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643835F51FB4431100AE1628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643836001FB4431100AE1628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		643835D71FB4431100AE1628 = {
+			isa = PBXGroup;
+			children = (
+				643835E21FB4431100AE1628 /* XDXHardwareEncoder */,
+				643835FB1FB4431100AE1628 /* XDXHardwareEncoderTests */,
+				643836061FB4431100AE1628 /* XDXHardwareEncoderUITests */,
+				643835E11FB4431100AE1628 /* Products */,
+				6438361A1FB449FE00AE1628 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		643835E11FB4431100AE1628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643835E01FB4431100AE1628 /* XDXHardwareEncoder.app */,
+				643835F81FB4431100AE1628 /* XDXHardwareEncoderTests.xctest */,
+				643836031FB4431100AE1628 /* XDXHardwareEncoderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643835E21FB4431100AE1628 /* XDXHardwareEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				643835E31FB4431100AE1628 /* AppDelegate.h */,
+				643835E41FB4431100AE1628 /* AppDelegate.m */,
+				643835E61FB4431100AE1628 /* ViewController.h */,
+				643835E71FB4431100AE1628 /* ViewController.m */,
+				643835E91FB4431100AE1628 /* Main.storyboard */,
+				643835EC1FB4431100AE1628 /* Assets.xcassets */,
+				643835EE1FB4431100AE1628 /* LaunchScreen.storyboard */,
+				643835F11FB4431100AE1628 /* Info.plist */,
+				643835F21FB4431100AE1628 /* main.m */,
+				643836151FB4434C00AE1628 /* XDXHardwareEncoder.h */,
+				643836161FB4434C00AE1628 /* XDXHardwareEncoder.m */,
+			);
+			path = XDXHardwareEncoder;
+			sourceTree = "<group>";
+		};
+		643835FB1FB4431100AE1628 /* XDXHardwareEncoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				643835FC1FB4431100AE1628 /* XDXHardwareEncoderTests.m */,
+				643835FE1FB4431100AE1628 /* Info.plist */,
+			);
+			path = XDXHardwareEncoderTests;
+			sourceTree = "<group>";
+		};
+		643836061FB4431100AE1628 /* XDXHardwareEncoderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				643836071FB4431100AE1628 /* XDXHardwareEncoderUITests.m */,
+				643836091FB4431100AE1628 /* Info.plist */,
+			);
+			path = XDXHardwareEncoderUITests;
+			sourceTree = "<group>";
+		};
+		6438361A1FB449FE00AE1628 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64277FD21FB538580052053A /* CoreMedia.framework */,
+				643836271FB4711900AE1628 /* libc++.tbd */,
+				6438361D1FB44A1700AE1628 /* VideoToolbox.framework */,
+				6438361B1FB449FE00AE1628 /* CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643835DF1FB4431100AE1628 /* XDXHardwareEncoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6438360C1FB4431100AE1628 /* Build configuration list for PBXNativeTarget "XDXHardwareEncoder" */;
+			buildPhases = (
+				643835DC1FB4431100AE1628 /* Sources */,
+				643835DD1FB4431100AE1628 /* Frameworks */,
+				643835DE1FB4431100AE1628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XDXHardwareEncoder;
+			productName = XDXHardwareEncoder;
+			productReference = 643835E01FB4431100AE1628 /* XDXHardwareEncoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		643835F71FB4431100AE1628 /* XDXHardwareEncoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6438360F1FB4431100AE1628 /* Build configuration list for PBXNativeTarget "XDXHardwareEncoderTests" */;
+			buildPhases = (
+				643835F41FB4431100AE1628 /* Sources */,
+				643835F51FB4431100AE1628 /* Frameworks */,
+				643835F61FB4431100AE1628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				643835FA1FB4431100AE1628 /* PBXTargetDependency */,
+			);
+			name = XDXHardwareEncoderTests;
+			productName = XDXHardwareEncoderTests;
+			productReference = 643835F81FB4431100AE1628 /* XDXHardwareEncoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		643836021FB4431100AE1628 /* XDXHardwareEncoderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643836121FB4431100AE1628 /* Build configuration list for PBXNativeTarget "XDXHardwareEncoderUITests" */;
+			buildPhases = (
+				643835FF1FB4431100AE1628 /* Sources */,
+				643836001FB4431100AE1628 /* Frameworks */,
+				643836011FB4431100AE1628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				643836051FB4431100AE1628 /* PBXTargetDependency */,
+			);
+			name = XDXHardwareEncoderUITests;
+			productName = XDXHardwareEncoderUITests;
+			productReference = 643836031FB4431100AE1628 /* XDXHardwareEncoderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		643835D81FB4431100AE1628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "小东邪";
+				TargetAttributes = {
+					643835DF1FB4431100AE1628 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					643835F71FB4431100AE1628 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 643835DF1FB4431100AE1628;
+					};
+					643836021FB4431100AE1628 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 643835DF1FB4431100AE1628;
+					};
+				};
+			};
+			buildConfigurationList = 643835DB1FB4431100AE1628 /* Build configuration list for PBXProject "XDXHardwareEncoder" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 643835D71FB4431100AE1628;
+			productRefGroup = 643835E11FB4431100AE1628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				643835DF1FB4431100AE1628 /* XDXHardwareEncoder */,
+				643835F71FB4431100AE1628 /* XDXHardwareEncoderTests */,
+				643836021FB4431100AE1628 /* XDXHardwareEncoderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		643835DE1FB4431100AE1628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643835F01FB4431100AE1628 /* LaunchScreen.storyboard in Resources */,
+				643835ED1FB4431100AE1628 /* Assets.xcassets in Resources */,
+				643835EB1FB4431100AE1628 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643835F61FB4431100AE1628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643836011FB4431100AE1628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		643835DC1FB4431100AE1628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643835E81FB4431100AE1628 /* ViewController.m in Sources */,
+				643836171FB4434C00AE1628 /* XDXHardwareEncoder.m in Sources */,
+				643835F31FB4431100AE1628 /* main.m in Sources */,
+				643835E51FB4431100AE1628 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643835F41FB4431100AE1628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643835FD1FB4431100AE1628 /* XDXHardwareEncoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643835FF1FB4431100AE1628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643836081FB4431100AE1628 /* XDXHardwareEncoderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		643835FA1FB4431100AE1628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 643835DF1FB4431100AE1628 /* XDXHardwareEncoder */;
+			targetProxy = 643835F91FB4431100AE1628 /* PBXContainerItemProxy */;
+		};
+		643836051FB4431100AE1628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 643835DF1FB4431100AE1628 /* XDXHardwareEncoder */;
+			targetProxy = 643836041FB4431100AE1628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		643835E91FB4431100AE1628 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643835EA1FB4431100AE1628 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		643835EE1FB4431100AE1628 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643835EF1FB4431100AE1628 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6438360A1FB4431100AE1628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6438360B1FB4431100AE1628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6438360D1FB4431100AE1628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 769TK3DTRY;
+				INFOPLIST_FILE = XDXHardwareEncoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xdx.XDXHardwareEncoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6438360E1FB4431100AE1628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 769TK3DTRY;
+				INFOPLIST_FILE = XDXHardwareEncoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xdx.XDXHardwareEncoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		643836101FB4431100AE1628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XDXHardwareEncoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xdx.XDXHardwareEncoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XDXHardwareEncoder.app/XDXHardwareEncoder";
+			};
+			name = Debug;
+		};
+		643836111FB4431100AE1628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XDXHardwareEncoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xdx.XDXHardwareEncoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XDXHardwareEncoder.app/XDXHardwareEncoder";
+			};
+			name = Release;
+		};
+		643836131FB4431100AE1628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XDXHardwareEncoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xdx.XDXHardwareEncoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XDXHardwareEncoder;
+			};
+			name = Debug;
+		};
+		643836141FB4431100AE1628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = XDXHardwareEncoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xdx.XDXHardwareEncoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XDXHardwareEncoder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		643835DB1FB4431100AE1628 /* Build configuration list for PBXProject "XDXHardwareEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6438360A1FB4431100AE1628 /* Debug */,
+				6438360B1FB4431100AE1628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6438360C1FB4431100AE1628 /* Build configuration list for PBXNativeTarget "XDXHardwareEncoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6438360D1FB4431100AE1628 /* Debug */,
+				6438360E1FB4431100AE1628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6438360F1FB4431100AE1628 /* Build configuration list for PBXNativeTarget "XDXHardwareEncoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643836101FB4431100AE1628 /* Debug */,
+				643836111FB4431100AE1628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643836121FB4431100AE1628 /* Build configuration list for PBXNativeTarget "XDXHardwareEncoderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643836131FB4431100AE1628 /* Debug */,
+				643836141FB4431100AE1628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 643835D81FB4431100AE1628 /* Project object */;
+}
