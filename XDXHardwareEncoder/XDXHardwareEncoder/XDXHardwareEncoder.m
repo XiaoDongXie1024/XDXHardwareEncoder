@@ -7,7 +7,7 @@
 //
 
 #import "XDXHardwareEncoder.h"
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "sys/utsname.h"
 #import <CoreMedia/CoreMedia.h>
 
@@ -240,19 +240,16 @@ void writeFile(uint8_t *buf, int size, FILE *videoFile, int frameCount) {
         _bitrate = XDXBitrate << 10;//convert to bps
         frameID  = 0;
         
-        if (self.enableH264) {
-            _h264propertyFlags      = NULL;
-            h264CompressionSession  = NULL;
-            m_h264_lock             = [[NSLock alloc] init];
-            initializedH264         = false;
-        }
-
-        if (self.enableH265) {
-            h265CompressionSession  = NULL;
-            _h265PropertyFlags      = NULL;
-            m_h265_lock             = [[NSLock alloc] init];
-            initializedH265         = false;
-        }
+        _h264propertyFlags      = NULL;
+        h264CompressionSession  = NULL;
+        m_h264_lock             = [[NSLock alloc] init];
+        initializedH264         = false;
+        
+        h265CompressionSession  = NULL;
+        _h265PropertyFlags      = NULL;
+        m_h265_lock             = [[NSLock alloc] init];
+        initializedH265         = false;
+        
 
         int is64Bit = sizeof(int*);
         g_isSupportRealTimeEncoder = (is64Bit == 8) ? true : false;
@@ -380,7 +377,6 @@ void writeFile(uint8_t *buf, int size, FILE *videoFile, int frameCount) {
     }
 }
 
-
 #pragma mark - Main Function
 + (instancetype)getInstance {
     @synchronized(self) {
@@ -392,6 +388,28 @@ void writeFile(uint8_t *buf, int size, FILE *videoFile, int frameCount) {
 }
 
 - (void)prepareForEncode {
+    
+    if (self.enableH265) {
+        if (@available(iOS 11.0, *)) {
+            BOOL hardwareDecodeSupported = VTIsHardwareDecodeSupported(kCMVideoCodecType_HEVC);
+            if (hardwareDecodeSupported) {
+                NSLog(@"Support H265 Encode/Decode!");
+            }else {
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"当前设备不支持H265直播" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:NULL]];
+                UIViewController *rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+                [rootViewController presentViewController:alertController animated:YES completion:nil];
+                return;
+            }
+        }else {
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"H265直播仅在iOS 11以上支持" message:nil preferredStyle:UIAlertControllerStyleAlert];
+            [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:NULL]];
+            UIViewController *rootViewController = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+            [rootViewController presentViewController:alertController animated:YES completion:nil];
+            return;
+        }
+    }
+    
     if(self.width == 0 || self.height == 0) {
         NSLog(@"XDXHardwareEncoder : VTSession need with and height for init,with = %d,height = %d",self.width, self.height);
         return;
@@ -727,8 +745,6 @@ void writeFile(uint8_t *buf, int size, FILE *videoFile, int frameCount) {
 
 #pragma mark - Dealloc
 -(void)tearDownSession {
-    // Reset ffmpeg context and stream
-    // AVFormatControl::GetInstance()->resetForSwitchLiveMethod();
     NSLog(@"TVUEncoder : Delloc VTSession");
     [m_h264_lock lock];
     if(h264CompressionSession != NULL) {
